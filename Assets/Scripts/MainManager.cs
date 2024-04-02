@@ -75,8 +75,8 @@ public class MainManager : MonoBehaviour
         m_GameOver = true;
         GameOverText.SetActive(true);
 
-        //Oyun bittiðinde puan kontrol edilir.
-        //Kayýtlý Best Score'dan yüksekse best score, best player name ve best score yazýsý güncellenir, veriler json olarak kaydedilir.
+        //Oyun bittiÄŸinde puan kontrol edilir.
+        //KayÄ±tlÄ± Best Score'dan yÃ¼ksekse best score, best player name gÃ¼ncellenir, veriler json olarak kaydedilir. Best score yazÄ±sÄ± gÃ¼ncellenir.
         if (m_Points > DataManager.Instance.bestScore)
         {
             DataManager.Instance.bestScore = m_Points;
