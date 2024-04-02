@@ -14,11 +14,6 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        //Best Score verilerini sýfýrlamak için.
-        //DataManager.Instance.bestScore = 0;
-        //DataManager.Instance.bestPlayerName = " ";
-        //DataManager.Instance.SaveBestScore();
-
         bestScore.text = "Best Score: " + DataManager.Instance.bestPlayerName + " : " + DataManager.Instance.bestScore; 
     }
 
@@ -35,5 +30,14 @@ public class GameManager : MonoBehaviour
 #else
         Application.Quit();
 #endif
+    }
+
+    public void ResetData()
+    {
+        //Best Score verilerini sýfýrlamak için.
+        DataManager.Instance.bestScore = 0;
+        DataManager.Instance.bestPlayerName = " ";
+        DataManager.Instance.SaveBestScore();
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 }
