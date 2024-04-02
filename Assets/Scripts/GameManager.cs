@@ -14,7 +14,7 @@ public class GameManager : MonoBehaviour
 
     private void Start()
     {
-        //Best Score verilerini sıfırlamak için.
+        //Best Score verilerini sÄ±fÄ±rlamak iÃ§in.
         //DataManager.Instance.bestScore = 0;
         //DataManager.Instance.bestPlayerName = " ";
         //DataManager.Instance.SaveBestScore();
